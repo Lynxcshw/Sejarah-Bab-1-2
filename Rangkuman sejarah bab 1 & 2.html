@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infografis Interaktif Sejarah Kelas XI</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome untuk Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen pb-12">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <div class="bg-amber-500 text-slate-950 p-2 rounded-lg font-extrabold text-xl shadow-lg shadow-amber-500/20">
+          XI
+        </div>
+        <div>
+          <h1 class="font-bold text-lg leading-tight tracking-wide">RANGKUMAN DAGING SEJARAH</h1>
+          <p class="text-xs text-amber-500 font-semibold tracking-wider uppercase">Persiapan Ujian Kilat</p>
+        </div>
+      </div>
+      <div class="flex bg-slate-900 p-1 rounded-xl border border-slate-800">
+        <button id="btn-bab1" onclick="switchTab('bab1')" class="px-4 py-2 rounded-lg text-sm font-bold transition-all duration-300 bg-amber-500 text-slate-950 shadow-md">
+          Bab 1: Kolonialisme
+        </button>
+        <button id="btn-bab2" onclick="switchTab('bab2')" class="px-4 py-2 rounded-lg text-sm font-bold text-slate-400 hover:text-slate-100 transition-all duration-300">
+          Bab 2: Perlawanan & Pergerakan
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 mt-8">
+
+    <!-- TAB 1: BAB 1 -->
+    <div id="content-bab1" class="space-y-8 block">
+      
+      <!-- Motivasi Kedatangan -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl relative overflow-hidden">
+        <div class="absolute right-0 top-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+            <i class="fa-solid fa-compass text-2xl"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">1. Mengapa Bangsa Eropa Datang?</h2>
+            <p class="text-xs text-slate-400">Pemicu utama penjelajahan samudra dunia timur</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Jatuhnya Konstantinopel -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="text-xs font-bold text-amber-500 uppercase tracking-wider">Katalis Utama</span>
+                <span class="bg-red-500/10 text-red-400 text-xs px-2 py-0.5 rounded-full font-bold">1453</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Jatuhnya Konstantinopel</h3>
+              <p class="text-sm text-slate-300 leading-relaxed">Ibu kota Kekaisaran Romawi Timur jatuh ke Turki Ottoman (Sultan Mehmed II). Jalur dagang ditutup total untuk pedagang Eropa.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800/80 bg-slate-950/40 p-3 rounded-lg">
+              <span class="text-xs font-bold text-amber-400 block mb-1">💡 ANALOGI MUDAH:</span>
+              <p class="text-xs text-slate-400">Satu-satunya kantin sekolah ditutup paksa. Murid terpaksa lompat pagar mencari agen luar secara langsung.</p>
+            </div>
+          </div>
+
+          <!-- Semboyan 3G -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-amber-500 uppercase tracking-wider block mb-3">Tujuan Ideologis</span>
+              <h3 class="text-lg font-bold text-white mb-3">Semboyan 3-G</h3>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-sm">G1</span>
+                  <div>
+                    <p class="text-sm font-bold text-white">Gold (Kekayaan)</p>
+                    <p class="text-xs text-slate-400">Memburu emas dan rempah-rempah bernilai selangit.</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 font-bold flex items-center justify-center text-sm">G2</span>
+                  <div>
+                    <p class="text-sm font-bold text-white">Glory (Kejayaan)</p>
+                    <p class="text-xs text-slate-400">Menjajah tanah sebanyak-banyaknya demi pamor bangsa.</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm">G3</span>
+                  <div>
+                    <p class="text-sm font-bold text-white">Gospel (Agama)</p>
+                    <p class="text-xs text-slate-400">Misi suci menyebarkan ajaran Kristen & Katolik.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teknologi Maritim -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-amber-500 uppercase tracking-wider block mb-3">Faktor Pendukung</span>
+              <h3 class="text-lg font-bold text-white mb-2">Revolusi Ilmu & Teknologi</h3>
+              <p class="text-sm text-slate-300 mb-4">Kemajuan teknologi navigasi memungkinkan pelayaran jarak jauh mengarungi samudra terbuka luas.</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-slate-800 px-3 py-1 rounded-lg text-xs font-semibold text-slate-300"><i class="fa-solid fa-compass text-amber-500 mr-1.5"></i>Kompas</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-lg text-xs font-semibold text-slate-300"><i class="fa-solid fa-circle text-amber-500 mr-1.5"></i>Bumi Bulat</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-lg text-xs font-semibold text-slate-300"><i class="fa-solid fa-ship text-amber-500 mr-1.5"></i>Kapal Karavel</span>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400">
+              Didukung juga oleh catatan perjalanan Marco Polo (The Travels of Marco Polo) yang melegenda.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tokoh Pelopor Penjelajah -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+            <i class="fa-solid fa-route text-2xl"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">2. Tokoh Pelopor Penjelajah Samudra</h2>
+            <p class="text-xs text-slate-400">Para penjelajah penemu jalur komoditas timur</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Portugis -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-l-4 border-l-emerald-500 border-slate-800">
+            <h3 class="font-bold text-emerald-400 text-sm tracking-wider uppercase mb-3">🇵🇹 PORTUGIS</h3>
+            <ul class="space-y-3 text-xs">
+              <li>
+                <p class="font-bold text-white text-sm">Bartholomeus Diaz (1488)</p>
+                <p class="text-slate-400">Sampai di Tanjung Harapan (Afrika Selatan).</p>
+              </li>
+              <li>
+                <p class="font-bold text-white text-sm">Vasco da Gama (1498)</p>
+                <p class="text-slate-400">Menembus sampai ke Calicut, India.</p>
+              </li>
+              <li>
+                <p class="font-bold text-white text-sm">Afonso de Albuquerque</p>
+                <p class="text-slate-400 font-semibold text-amber-400">Menaklukkan Malaka (1511) & Goa (1510).</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Spanyol -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-l-4 border-l-red-500 border-slate-800">
+            <h3 class="font-bold text-red-400 text-sm tracking-wider uppercase mb-3">🇪🇸 SPANYOL</h3>
+            <ul class="space-y-3 text-xs">
+              <li>
+                <p class="font-bold text-white text-sm">Christopher Columbus (1492)</p>
+                <p class="text-slate-400">Sampai di Kepulauan Bahama, Benua Amerika.</p>
+              </li>
+              <li>
+                <p class="font-bold text-white text-sm">Ferdinand Magellan (1521)</p>
+                <p class="text-slate-400">Mencapai Filipina; tewas dalam konflik lokal.</p>
+              </li>
+              <li>
+                <p class="font-bold text-white text-sm">Sebastian del Cano (1522)</p>
+                <p class="text-slate-400 font-semibold text-amber-400">Melanjutkan rute Magellan pulang via Maluku.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Belanda -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-l-4 border-l-blue-500 border-slate-800">
+            <h3 class="font-bold text-blue-400 text-sm tracking-wider uppercase mb-3">🇳🇱 BELANDA</h3>
+            <ul class="space-y-3 text-xs">
+              <li>
+                <p class="font-bold text-white text-sm">Cornelis de Houtman (1596)</p>
+                <p class="text-slate-400 font-semibold text-amber-400">Rombongan pertama Belanda mendarat di Banten dengan 4 kapal.</p>
+              </li>
+              <li class="pt-2 border-t border-slate-800">
+                <span class="text-[10px] bg-blue-500/10 text-blue-300 px-2 py-0.5 rounded font-bold uppercase">Ujian Note:</span>
+                <p class="text-slate-400 mt-1">Kedatangannya ditolak warga Banten karena sikapnya yang sangat arogan dan kasar.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Inggris -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-l-4 border-l-amber-500 border-slate-800">
+            <h3 class="font-bold text-amber-400 text-sm tracking-wider uppercase mb-3">🇬🇧 INGGRIS</h3>
+            <ul class="space-y-3 text-xs">
+              <li>
+                <p class="font-bold text-white text-sm">Sir Francis Drake (1579)</p>
+                <p class="text-slate-400">Sandar di Ternate, dijamu Sultan Baabullah, memborong cengkih.</p>
+              </li>
+              <li>
+                <p class="font-bold text-white text-sm">James Lancaster (1601)</p>
+                <p class="text-slate-400">Melakukan misi dagang EIC ke Aceh, Banten, dan Maluku.</p>
+              </li>
+              <li>
+                <p class="font-bold text-white text-sm">Sir Henry Middleton (1604)</p>
+                <p class="text-slate-400">Bersaing dengan kongsi dagang VOC di Maluku & Banten.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Monopoli VOC -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 mb-6">
+          <div class="flex items-center gap-3">
+            <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+              <i class="fa-solid fa-coins text-2xl"></i>
+            </div>
+            <div>
+              <h2 class="text-xl font-extrabold text-white">3. Era Kongsi Dagang VOC (1602 - 1799)</h2>
+              <p class="text-xs text-slate-400">Kongsi dagang terkaya sekaligus terkejam sepanjang sejarah</p>
+            </div>
+          </div>
+          <div class="bg-slate-900 px-4 py-2 rounded-xl border border-slate-800 text-xs">
+            <span class="text-slate-400">Pimpinan Tertinggi:</span> <strong class="text-amber-500">Heeren Zeventien (17 Tuan)</strong>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Hak Oktroi -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 lg:col-span-1">
+            <h3 class="text-md font-bold text-white mb-3 flex items-center gap-2">
+              <i class="fa-solid fa-crown text-amber-400"></i> Hak Oktroi (Hak Istimewa)
+            </h3>
+            <p class="text-xs text-slate-400 mb-4">Hak dari pemerintah Belanda yang menjadikan VOC bertindak layaknya "negara di dalam negara".</p>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                <i class="fa-solid fa-hammer text-amber-500 mb-1 block"></i>
+                Memerintah daerah jajahan
+              </div>
+              <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                <i class="fa-solid fa-money-bill-1 text-amber-500 mb-1 block"></i>
+                Mencetak mata uang sendiri
+              </div>
+              <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                <i class="fa-solid fa-user-shield text-amber-500 mb-1 block"></i>
+                Membentuk angkatan perang
+              </div>
+              <div class="bg-slate-950 p-2.5 rounded border border-slate-800">
+                <i class="fa-solid fa-handshake text-amber-500 mb-1 block"></i>
+                Membuat perjanjian damai/perang
+              </div>
+            </div>
+          </div>
+
+          <!-- Kebijakan Monopoli -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 lg:col-span-2">
+            <h3 class="text-md font-bold text-white mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-gavel text-amber-400"></i> Kebijakan Pemerasan VOC di Nusantara
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Ekstirpasi -->
+              <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                <h4 class="font-bold text-white text-sm mb-1 flex items-center justify-between">
+                  Ekstirpasi
+                  <span class="text-[10px] bg-red-500/10 text-red-400 px-2 py-0.5 rounded font-bold">Kejam</span>
+                </h4>
+                <p class="text-xs text-slate-400">Pemusnahan atau pembakaran kelebihan tanaman rempah pribumi agar stok pasar terbatas dan harga di Eropa tetap mahal.</p>
+              </div>
+
+              <!-- Pelayaran Hongi -->
+              <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                <h4 class="font-bold text-white text-sm mb-1 flex items-center justify-between">
+                  Pelayaran Hongi
+                  <span class="text-[10px] bg-red-500/10 text-red-400 px-2 py-0.5 rounded font-bold">Patroli Laut</span>
+                </h4>
+                <p class="text-xs text-slate-400">Patroli laut bersenjata (perahu kora-kora) untuk mengawasi dan menangkap pribumi yang nekat menjual rempah ke negara lain.</p>
+              </div>
+
+              <!-- Kontingenten & Verplichte Leverantie -->
+              <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                <h4 class="font-bold text-white text-sm mb-1">Upeti Pajak & Penyerahan Wajib</h4>
+                <p class="text-xs text-slate-400">Kewajiban pribumi membayar pajak berupa hasil bumi serta wajib menjual seluruh hasil panennya hanya kepada VOC dengan harga sangat murah.</p>
+              </div>
+
+              <!-- Divide et Impera -->
+              <div class="bg-slate-950 p-4 rounded-lg border border-slate-800">
+                <h4 class="font-bold text-white text-sm mb-1">Divide et Impera</h4>
+                <p class="text-xs text-slate-400">Politik adu domba. VOC masuk ke pusaran konflik keluarga kerajaan, menyokong salah satu pihak, lalu meminta upeti wilayah strategis sebagai imbalan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keruntuhan VOC -->
+        <div class="mt-6 p-4 bg-red-950/20 border border-red-900/40 rounded-xl">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-triangle-exclamation text-red-400"></i>
+            <h3 class="font-bold text-red-300 text-sm">Mengapa VOC Bangkrut & Dibubarkan (31 Des 1799)?</h3>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-300">
+            <div class="flex items-start gap-2">
+              <span class="text-red-400 font-bold">1.</span>
+              <p>Korupsi merajalela pegawai VOC (*Vergaan Onder Corruptie*).</p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-red-400 font-bold">2.</span>
+              <p>Kas negara ludes untuk mendanai biaya perang melawan perlawanan rakyat daerah.</p>
+            </div>
+            <div class="flex items-start gap-2">
+              <span class="text-red-400 font-bold">3.</span>
+              <p>Biaya operasional kantor cabang perdagangan membengkak drastis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daendels & Raffles -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+            <i class="fa-solid fa-flag text-2xl"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">4. Era Daendels (Prancis-Belanda) vs Raffles (Inggris)</h2>
+            <p class="text-xs text-slate-400">Dua penguasa barat dengan kontras gaya kepemimpinan di tanah Jawa</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Daendels -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-red-500/10 text-red-400 text-xs px-2 py-1 rounded font-bold">🇫🇷 Herman Willem Daendels (1808-1811)</span>
+                <span class="text-slate-400 text-xs">Masa Bataaf</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-3">Gubernur Jenderal Tangan Besi</h3>
+              <p class="text-sm text-slate-300 mb-4">Dikirim oleh Napoleon Bonaparte dari Prancis untuk mempertahankan Pulau Jawa dari invasi militer Inggris.</p>
+              
+              <div class="space-y-2 text-xs">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-road text-amber-500 mt-0.5"></i>
+                  <div>
+                    <span class="font-bold text-white">Jalan Raya Pos (Anyer - Panarukan)</span>
+                    <p class="text-slate-400">Pembangunan infrastruktur ±1.100 km dengan korban kerja rodi ribuan rakyat pribumi.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-shield text-amber-500 mt-0.5"></i>
+                  <div>
+                    <span class="font-bold text-white">Prefektur Baru</span>
+                    <p class="text-slate-400">Membagi Jawa menjadi 9 wilayah prefektur, kedudukan bupati dipangkas menjadi sekadar pegawai bergaji.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 pt-3 border-t border-slate-800 text-xs bg-slate-950 p-3 rounded-lg text-slate-400">
+              📌 <strong class="text-white">Ujian Tip:</strong> Daendels dikenal otoriter & militeristik. Dipecat karena banyak laporan penyalahgunaan kekuasaan.
+            </div>
+          </div>
+
+          <!-- Raffles -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-blue-500/10 text-blue-400 text-xs px-2 py-1 rounded font-bold">🇬🇧 Thomas Stamford Raffles (1811-1816)</span>
+                <span class="text-slate-400 text-xs">Masa Inggris</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-3">Era Liberal Baru</h3>
+              <p class="text-sm text-slate-300 mb-4">Masuk ke Batavia setelah penandatanganan <strong class="text-amber-400">Kapitulasi Tuntang (1811)</strong>.</p>
+              
+              <div class="space-y-2 text-xs">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-hand-holding-dollar text-amber-500 mt-0.5"></i>
+                  <div>
+                    <span class="font-bold text-white">Sistem Landrent (Sewa Tanah)</span>
+                    <p class="text-slate-400">Pemerintah adalah pemilik tanah, rakyat penggarap menyewa ke pemerintah dengan uang tunai.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-book-open text-amber-500 mt-0.5"></i>
+                  <div>
+                    <span class="font-bold text-white">Penemuan & Ilmu Pengetahuan</span>
+                    <p class="text-slate-400">Menulis buku *History of Java*, merintis Kebun Raya Bogor, penemu bunga Rafflesia Arnoldii.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-6 pt-3 border-t border-slate-800 text-xs bg-slate-950 p-3 rounded-lg text-slate-400">
+              📌 <strong class="text-white">Mengapa Sewa Tanah Gagal?</strong> Warga belum terbiasa sistem uang tunai & adat feodal Jawa masih terlalu mengakar kuat.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tanam Paksa & Politik Pintu Terbuka -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+            <i class="fa-solid fa-seedling text-2xl"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">5. Tanam Paksa (1830) & Sistem Ekonomi Liberal (1870)</h2>
+            <p class="text-xs text-slate-400">Siklus pengurasan kekayaan bumi nusantara pasca-VOC</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Tanam Paksa -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="text-xs font-bold text-amber-500 uppercase tracking-wider">Cultuurstelsel</span>
+                <span class="text-slate-400 text-xs">Pencetus: Johannes van den Bosch</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Sistem Tanam Paksa (1830)</h3>
+              <p class="text-sm text-slate-300 mb-4">Upaya paksa mengisi kas Belanda yang kosong pasca Perang Diponegoro.</p>
+              
+              <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 mb-4">
+                <span class="text-xs text-amber-400 font-bold block mb-1">⚠️ PENYELAWANGAN NYATA:</span>
+                <p class="text-xs text-slate-400">Secara tertulis hanya diminta 1/5 lahan pertanian, namun kenyataannya diambil seluruh tanah tersubur demi mengejar bonus target (*Cultuurprocenten*).</p>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 pt-3 border-t border-slate-800 flex items-center justify-between">
+              <span>Buku Kritik: <strong class="text-red-400">Max Havelaar</strong> (Multatuli)</span>
+              <span class="bg-red-500/10 text-red-400 px-2 py-0.5 rounded font-bold">1860</span>
+            </div>
+          </div>
+
+          <!-- Politik Pintu Terbuka -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="text-xs font-bold text-blue-500 uppercase tracking-wider">Ekonomi Liberal</span>
+                <span class="text-slate-400 text-xs">UU Agraria & UU Gula (1870)</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Politik Pintu Terbuka (Open Door Policy)</h3>
+              <p class="text-sm text-slate-300 mb-4">Swasta asing (Inggris, Belanda, dll) diizinkan menyewa tanah jajahan untuk perkebunan tebu, teh, kina, dan pertambangan.</p>
+              
+              <div class="bg-slate-950 p-3 rounded-lg border border-slate-800 mb-4">
+                <span class="text-xs text-blue-400 font-bold block mb-1">⚠️ NASIB PRIBUMI:</span>
+                <p class="text-xs text-slate-400">Bukan lagi petani merdeka, melainkan kuli di tanahnya sendiri yang dieksploitasi lewat kontrak paksa (*Koeli Ordonnantie*).</p>
+              </div>
+            </div>
+            <div class="text-xs text-slate-400 pt-3 border-t border-slate-800">
+              Kritik tajam dari kaum humanis melahirkan kebijakan <strong class="text-emerald-400">Politik Etis (Etika Balas Budi)</strong> di awal abad ke-20.
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- TAB 2: BAB 2 -->
+    <div id="content-bab2" class="space-y-8 hidden">
+      
+      <!-- Ciri Perlawanan -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+            <i class="fa-solid fa-arrows-spin text-2xl"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">1. Evolusi Karakter Perlawanan</h2>
+            <p class="text-xs text-slate-400">Perbedaan strategi perjuangan sebelum dan sesudah abad ke-20</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Sebelum Abad ke-20 -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-red-500/20 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="text-xs font-bold text-red-400 uppercase tracking-wider">Sebelum 1900-an</span>
+                <span class="bg-red-500/10 text-red-400 text-[10px] px-2 py-0.5 rounded font-bold uppercase">Sering Kalah</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-4">Perlawanan Fisik & Kedaerahan</h3>
+              
+              <ul class="space-y-3 text-xs text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                  <div>
+                    <span class="font-bold text-white">Sifat Lokal:</span> Perjuangan parsial per daerah tanpa adanya koordinasi nasional.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                  <div>
+                    <span class="font-bold text-white">Ketergantungan Figur:</span> Dipimpin bangsawan/tokoh agama kharismatik. Jika ditangkap/gugur, perlawanan langsung padam.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-xmark text-red-500 mt-1"></i>
+                  <div>
+                    <span class="font-bold text-white">Senjata & Taktik:</span> Kalah telak dalam kecanggihan teknologi persenjataan barat.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-3 border-t border-slate-800 text-xs text-slate-400 italic">
+              Contoh Perang: Perang Diponegoro (Yogyakarta), Perang Padri (Sumbar), Perang Pattimura (Maluku).
+            </div>
+          </div>
+
+          <!-- Setelah Abad ke-20 -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-emerald-500/20 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Setelah 1900-an</span>
+                <span class="bg-emerald-500/10 text-emerald-400 text-[10px] px-2 py-0.5 rounded font-bold uppercase">Awal Modern</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-4">Pergerakan Nasional Modern</h3>
+              
+              <ul class="space-y-3 text-xs text-slate-300">
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                  <div>
+                    <span class="font-bold text-white">Dipimpin Kaum Terpelajar:</span> Lahir dari sistem edukasi Politik Etis. Perjuangan menggunakan intelektual & diplomasi.
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                  <div>
+                    <span class="font-bold text-white">Sifat Nasional:</span> Menggunakan organisasi modern, terstruktur, tidak bergantung pada satu figur pemimpin saja (ada kaderisasi).
+                  </div>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                  <div>
+                    <span class="font-bold text-white">Tujuan Jelas:</span> Mencapai kemerdekaan dan kedaulatan bangsa Indonesia seutuhnya.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 pt-3 border-t border-slate-800 text-xs text-slate-400 italic">
+              Contoh Organisasi: Budi Utomo, Sarekat Islam, Indische Partij, Perhimpunan Indonesia.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Perang Besar Daerah -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+            <i class="fa-solid fa-burst text-2xl"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">2. Ujian Must-Know: Perang Daerah Terbesar</h2>
+            <p class="text-xs text-slate-400">Tiga perang daerah termahal yang membuat kas kolonial Belanda terkuras habis</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Perang Diponegoro -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2.5 py-1 rounded font-bold">1825 - 1830</span>
+                <span class="text-slate-400 text-xs">Yogyakarta</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Perang Diponegoro</h3>
+              <p class="text-xs text-amber-400 font-semibold mb-2">Belanda bangkrut akibat perang ini!</p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li><strong class="text-white">Pemicu:</strong> Belanda memasang patok jalan di atas makam leluhur Diponegoro di Tegalrejo secara sepihak.</li>
+                <li><strong class="text-white">Taktik:</strong> Diponegoro memakai gerilya. Belanda membalas memakai sistem <strong class="text-red-400">Benteng Stelsel</strong> (mempersempit gerak).</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400 bg-slate-950/40 p-2 rounded">
+              ⚠️ <strong class="text-white">Hasil:</strong> Diponegoro ditangkap lewat taktik negosiasi jebakan pada tahun 1830.
+            </div>
+          </div>
+
+          <!-- Perang Padri -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2.5 py-1 rounded font-bold">1803 - 1838</span>
+                <span class="text-slate-400 text-xs">Sumatra Barat</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Perang Padri</h3>
+              <p class="text-xs text-amber-400 font-semibold mb-2">Perang saudara berbalik jadi perang nasional</p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li><strong class="text-white">Pemicu:</strong> Konflik Kaum Padri (ulama) vs Kaum Adat soal tradisi menyimpang syariat Islam. Belanda memihak adat.</li>
+                <li><strong class="text-white">Plot Twist:</strong> Kedua kubu akhirnya bersekutu melawan Belanda setelah sadar diadu domba.</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400 bg-slate-950/40 p-2 rounded">
+              ⚠️ <strong class="text-white">Tokoh:</strong> Tuanku Imam Bonjol. Berakhir setelah Benteng Bonjol ditakhlukkan Belanda.
+            </div>
+          </div>
+
+          <!-- Perang Jagaraga -->
+          <div class="bg-slate-900 p-5 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-center mb-3">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2.5 py-1 rounded font-bold">1846 - 1849</span>
+                <span class="text-slate-400 text-xs">Bali</span>
+              </div>
+              <h3 class="text-lg font-bold text-white mb-2">Perang Jagaraga (Bali)</h3>
+              <p class="text-xs text-amber-400 font-semibold mb-2">Puputan (perang habis-habisan)</p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li><strong class="text-white">Pemicu:</strong> Penolakan hak <strong class="text-red-400">Tawan Karang</strong> (hak raja Bali merampas seluruh muatan kapal asing yang kandas).</li>
+                <li><strong class="text-white">Tokoh Utama:</strong> Raja Buleleng dan patihnya yang gigih, <strong class="text-white">I Gusti Ketut Jelantik</strong>.</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 text-xs text-slate-400 bg-slate-950/40 p-2 rounded">
+              ⚠️ <strong class="text-white">Karakteristik:</strong> Perang puputan total seluruh rakyat hingga titik darah penghabisan.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Organisasi Pergerakan -->
+      <section class="bg-slate-950 rounded-2xl p-6 border border-slate-800 shadow-xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-amber-500/10 text-amber-500 p-3 rounded-xl">
+            <i class="fa-solid fa-users text-2xl"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold text-white">3. Organisasi Pergerakan Nasional</h2>
+            <p class="text-xs text-slate-400">Peta jalan kemerdekaan Indonesia melalui gagasan modern</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Budi Utomo -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2 py-0.5 rounded font-bold">1908</span>
+                <span class="text-slate-500 text-xs">Awal Pergerakan</span>
+              </div>
+              <h3 class="font-bold text-white text-sm mb-1">Budi Utomo</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">Didirikan mahasiswa STOVIA dipimpin Dr. Sutomo atas gagasan Dr. Wahidin Sudirohusodo.</p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-slate-800/60 text-[11px] text-amber-400 font-semibold">
+              ⭐ Diperingati sebagai Hari Kebangkitan Nasional (20 Mei).
+            </div>
+          </div>
+
+          <!-- Sarekat Islam -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2 py-0.5 rounded font-bold">1912</span>
+                <span class="text-slate-500 text-xs">Massa Pertama</span>
+              </div>
+              <h3 class="font-bold text-white text-sm mb-1">Sarekat Islam (SI)</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">Awalnya SDI oleh Haji Samanhudi (melindungi pedagang batik pribumi), lalu bermetamorfosis ke politik massa oleh H.O.S. Tjokroaminoto.</p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-slate-800/60 text-[11px] text-amber-400 font-semibold">
+              ⭐ Organisasi massa nasional pertama yang berpolitik praktis.
+            </div>
+          </div>
+
+          <!-- Indische Partij -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2 py-0.5 rounded font-bold">1912</span>
+                <span class="text-slate-500 text-xs">Radikal Pertama</span>
+              </div>
+              <h3 class="font-bold text-white text-sm mb-1">Indische Partij (IP)</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">Didirikan "Tiga Serangkai" (Douwes Dekker, Cipto Mangunkusumo, Ki Hajar Dewantara). Langsung menuntut Indonesia Merdeka.</p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-slate-800/60 text-[11px] text-amber-400 font-semibold">
+              ⭐ Dilarang keras oleh Belanda; pimpinannya diasingkan.
+            </div>
+          </div>
+
+          <!-- Perhimpunan Indonesia -->
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start mb-3">
+                <span class="bg-amber-500/10 text-amber-400 text-[10px] px-2 py-0.5 rounded font-bold">1925</span>
+                <span class="text-slate-500 text-xs">Kancah Internasional</span>
+              </div>
+              <h3 class="font-bold text-white text-sm mb-1">Perhimpunan Indonesia (PI)</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">Didirikan mahasiswa Indonesia di Belanda (Mohammad Hatta). Menggaungkan nama "Indonesia" di ranah global.</p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-slate-800/60 text-[11px] text-amber-400 font-semibold">
+              ⭐ Memprakarsai lahirnya Sumpah Pemuda (1928).
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="border-t border-slate-800 mt-12 pt-6 text-center text-xs text-slate-500">
+    <p>© 2026 Rangkuman Sejarah Cepat - Dirancang Khusus untuk Persiapan Ujian Esok Hari</p>
+  </footer>
+
+  <script>
+    function switchTab(tab) {
+      const contentBab1 = document.getElementById('content-bab1');
+      const contentBab2 = document.getElementById('content-bab2');
+      const btnBab1 = document.getElementById('btn-bab1');
+      const btnBab2 = document.getElementById('btn-bab2');
+
+      if (tab === 'bab1') {
+        contentBab1.classList.remove('hidden');
+        contentBab1.classList.add('block');
+        contentBab2.classList.remove('block');
+        contentBab2.classList.add('hidden');
+
+        btnBab1.className = "px-4 py-2 rounded-lg text-sm font-bold transition-all duration-300 bg-amber-500 text-slate-950 shadow-md";
+        btnBab2.className = "px-4 py-2 rounded-lg text-sm font-bold text-slate-400 hover:text-slate-100 transition-all duration-300";
+      } else {
+        contentBab2.classList.remove('hidden');
+        contentBab2.classList.add('block');
+        contentBab1.classList.remove('block');
+        contentBab1.classList.add('hidden');
+
+        btnBab2.className = "px-4 py-2 rounded-lg text-sm font-bold transition-all duration-300 bg-amber-500 text-slate-950 shadow-md";
+        btnBab1.className = "px-4 py-2 rounded-lg text-sm font-bold text-slate-400 hover:text-slate-100 transition-all duration-300";
+      }
+    }
+  </script>
+</body>
+</html>
